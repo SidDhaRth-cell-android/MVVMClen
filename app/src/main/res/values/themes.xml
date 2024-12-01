@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <style name="NightAdjusted.Theme.AirtelTask" parent="Theme.Material3.Light.NoActionBar" />
+
+  <style name="Theme.Airtel" parent="NightAdjusted.Theme.AirtelTask" />
+
+
+  <style name="NightAdjusted.Theme.Splash" parent="Theme.Airtel">
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    <item name="android:windowTranslucentStatus">false</item>
+  </style>
+
+  <style name="Theme.Airtel.Splash" parent="NightAdjusted.Theme.Splash">
+    <item name="android:windowSplashScreenBackground">@color/white</item>
+    <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_logo</item>
+    <item name="postSplashScreenTheme">@style/NightAdjusted.Theme.Splash</item>
+  </style>
+</resources>
